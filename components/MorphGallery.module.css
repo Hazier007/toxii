@@ -1,0 +1,95 @@
+.section {
+  position: relative;
+  background: #000;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.stack {
+  position: absolute;
+  inset: 0;
+}
+
+.frame {
+  position: absolute;
+  inset: 0;
+  will-change: opacity, transform, filter;
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(0.1) contrast(1.08);
+}
+
+.grad {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  background:
+    radial-gradient(130% 90% at 50% 50%, transparent 45%, rgba(0,0,0,0.5) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.65) 0%, transparent 25%, transparent 70%, rgba(0,0,0,0.85) 100%);
+}
+
+.hud {
+  position: absolute;
+  top: clamp(5rem, 12vh, 9rem);
+  left: clamp(1.5rem, 6vw, 8rem);
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.bigword {
+  font-size: clamp(2.6rem, 8vw, 6rem);
+  max-width: 12ch;
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.meta {
+  position: absolute;
+  right: clamp(1.5rem, 6vw, 8rem);
+  bottom: clamp(3rem, 10vh, 6rem);
+  z-index: 60;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: var(--fg);
+}
+
+.counter {
+  font-size: clamp(3rem, 9vw, 6rem);
+  color: var(--accent-soft);
+}
+
+.total {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+}
+
+.progress {
+  position: absolute;
+  left: clamp(1.5rem, 6vw, 8rem);
+  right: clamp(1.5rem, 6vw, 8rem);
+  bottom: clamp(2.4rem, 7vh, 4rem);
+  z-index: 60;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.progressBar {
+  height: 100%;
+  width: 100%;
+  background: var(--accent);
+  transform-origin: left;
+}

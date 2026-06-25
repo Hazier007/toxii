@@ -1,0 +1,21 @@
+.wrap {
+  background: var(--bg);
+  padding: clamp(5rem, 14vw, 11rem) 0;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.quote {
+  font-size: clamp(1.8rem, 5.5vw, 5rem);
+  line-height: 1.04;
+  text-align: center;
+  max-width: 20ch;
+  margin: 0 auto;
+  padding: 0 1rem;
+  color: var(--fg);
+}
+
+.quote::first-letter {
+  color: var(--accent);
+}

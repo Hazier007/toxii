@@ -1,0 +1,102 @@
+.hero {
+  position: relative;
+  height: 100svh;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: -5% 0 0 0;
+  z-index: 0;
+}
+
+.bgImg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 20%;
+  filter: grayscale(0.25) contrast(1.1);
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 80% at 50% 30%, transparent 30%, rgba(5,5,5,0.55) 75%, rgba(5,5,5,0.95) 100%),
+    linear-gradient(180deg, rgba(5,5,5,0.55) 0%, transparent 30%, rgba(5,5,5,0.85) 100%);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 0 1.5rem;
+}
+
+.title {
+  font-size: clamp(5.5rem, 26vw, 22rem);
+  letter-spacing: 0.04em;
+  margin: 0.2rem 0;
+  display: flex;
+  gap: 0.02em;
+  perspective: 800px;
+}
+
+.title span {
+  display: inline-block;
+  transform-origin: bottom;
+  text-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.sub {
+  font-size: 0.8rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.scrollCue {
+  position: absolute;
+  bottom: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  animation: drop 1.8s ease-in-out infinite;
+  transform-origin: top;
+}
+
+@keyframes drop {
+  0% { transform: scaleY(0); opacity: 0; }
+  40% { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(0) translateY(48px); opacity: 0; }
+}
