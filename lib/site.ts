@@ -10,7 +10,7 @@ export const site = {
 
   // Short intro shown in the About section (her own words)
   intro:
-    "Toxii is an internationally recognized body modification artist, tattoo enthusiast, and alternative model originally from Belgium. Through her fearless approach to self-expression, she has become one of the most talked-about figures in the global body modification community.",
+    "Toxii is an internationally recognized body modification artist, tattoo enthusiast, and alternative model originally from the Netherlands. Through her fearless approach to self-expression, she has become one of the most talked-about figures in the global body modification community.",
 
   story: [
     "Driven by the belief that individuality should have no limits, Toxii uses her own body as a living canvas. Her journey combines tattoos, extreme body modifications, and artistic transformation to challenge conventional beauty standards and inspire others to embrace their authentic selves.",
@@ -23,7 +23,7 @@ export const site = {
 
   // Booking / contact
   email: "bookings@toxii.bodymod",
-  location: "Originally Belgium · Worldwide bookings & appearances",
+  location: "Originally the Netherlands · Worldwide bookings & appearances",
 
   // Social links — replace with the real URLs
   socials: [

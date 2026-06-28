@@ -35,7 +35,7 @@ export default function About() {
                 <span className={styles.label}>Following</span>
               </div>
               <div>
-                <span className={`${styles.num} display`}>Belgium</span>
+                <span className={`${styles.num} display`}>Netherlands</span>
                 <span className={styles.label}>Origin</span>
               </div>
               <div>

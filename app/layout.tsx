@@ -4,12 +4,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "TOXII — Modified Wife · Modified Life",
   description:
-    "Toxii Daniëlle — Belgian-born body modification artist and model. Extreme, intentional, unapologetic transformation. Bookings, gallery and links.",
+    "Toxii Daniëlle — Dutch-born body modification artist and model. Extreme, intentional, unapologetic transformation. Bookings, gallery and links.",
   metadataBase: new URL("https://toxii.bodymod"),
   openGraph: {
     title: "TOXII — Modified Wife · Modified Life",
     description:
-      "Belgian-born body modification artist and model. Extreme, intentional, unapologetic.",
+      "Dutch-born body modification artist and model. Extreme, intentional, unapologetic.",
     type: "website",
   },
   twitter: {
